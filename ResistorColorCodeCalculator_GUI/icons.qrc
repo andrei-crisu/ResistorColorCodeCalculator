@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/button_icons">
+        <file>icons/home.png</file>
+        <file>icons/square_0.png</file>
+        <file>icons/square_1.png</file>
+        <file>icons/square_2.png</file>
+        <file>icons/square_3.png</file>
+        <file>icons/square_4.png</file>
+        <file>icons/square_5.png</file>
+        <file>icons/square_6.png</file>
+        <file>icons/square_7.png</file>
+        <file>icons/square_8.png</file>
+        <file>icons/square_9.png</file>
+        <file>icons/square_10.png</file>
+        <file>icons/square_11.png</file>
+    </qresource>
+</RCC>
