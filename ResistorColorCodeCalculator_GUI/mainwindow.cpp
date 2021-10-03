@@ -112,3 +112,9 @@ void MainWindow::on_home_3_clicked()
     ui->stackedWidget->setCurrentIndex(0);
 }
 
+
+void MainWindow::on_resistorColorComboBox_currentIndexChanged(int index)
+{
+    item.resistorColorType=index;
+}
+

@@ -17,6 +17,7 @@ CustomGraphicsItem::CustomGraphicsItem(double x,double y,double height, double h
 
     //set default bands values
     band1=band2=band3=band4=0;
+    resistorColorType=0;
 
     //set bandRectangles
     rectBand1=QRectF(x+0.3*headWidth,y,0.2*headWidth,height+2*cornerDimension);
@@ -51,8 +52,25 @@ CustomGraphicsItem::CustomGraphicsItem(double x,double y,double height, double h
 
 void CustomGraphicsItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *, QWidget *)
 {
-    //QColor color(152,152,152);  //gray shade
-    QColor color(128,205,199);    //blue shade
+    //default resistor color is a blue shade
+    //because default resistorColorType is 0
+    QColor color(128,205,199);  //blue shade
+    //selecting resistor color
+    switch (resistorColorType) {
+    case 0:
+        //blue shade
+        color=QColor(128,205,199);
+        break;
+    case 1:
+        //beige shade
+        color=QColor(211, 168, 119);
+        break;
+    case 2:
+        //grey shade
+        color=QColor(152,152,152);
+        break;
+    }
+    //drawing resistor shape
     QPen pen(color,1);
     QBrush brush(color);
     painter->setPen(pen);

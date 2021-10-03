@@ -13,5 +13,8 @@
         <file>icons/square_9.png</file>
         <file>icons/square_10.png</file>
         <file>icons/square_11.png</file>
+        <file>icons/square_beige.png</file>
+        <file>icons/square_blue.png</file>
+        <file>icons/square_grey.png</file>
     </qresource>
 </RCC>

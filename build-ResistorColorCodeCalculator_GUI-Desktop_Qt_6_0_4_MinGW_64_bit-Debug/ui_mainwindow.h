@@ -89,6 +89,15 @@ public:
     QWidget *page_4;
     QVBoxLayout *verticalLayout_13;
     QGroupBox *groupBox;
+    QHBoxLayout *horizontalLayout_7;
+    QSpacerItem *horizontalSpacer_11;
+    QVBoxLayout *verticalLayout_15;
+    QSpacerItem *verticalSpacer_10;
+    QVBoxLayout *verticalLayout_14;
+    QLabel *label_7;
+    QComboBox *resistorColorComboBox;
+    QSpacerItem *verticalSpacer_9;
+    QSpacerItem *horizontalSpacer_12;
     QSpacerItem *verticalSpacer_7;
     QHBoxLayout *horizontalLayout_6;
     QSpacerItem *horizontalSpacer_9;
@@ -645,6 +654,75 @@ public:
         sizePolicy1.setVerticalStretch(1);
         sizePolicy1.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
         groupBox->setSizePolicy(sizePolicy1);
+        horizontalLayout_7 = new QHBoxLayout(groupBox);
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        horizontalSpacer_11 = new QSpacerItem(248, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_11);
+
+        verticalLayout_15 = new QVBoxLayout();
+        verticalLayout_15->setObjectName(QString::fromUtf8("verticalLayout_15"));
+        verticalSpacer_10 = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_15->addItem(verticalSpacer_10);
+
+        verticalLayout_14 = new QVBoxLayout();
+        verticalLayout_14->setSpacing(10);
+        verticalLayout_14->setObjectName(QString::fromUtf8("verticalLayout_14"));
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setMinimumSize(QSize(240, 24));
+        label_7->setMaximumSize(QSize(16777215, 24));
+        label_7->setFont(font1);
+        label_7->setStyleSheet(QString::fromUtf8(""));
+
+        verticalLayout_14->addWidget(label_7);
+
+        resistorColorComboBox = new QComboBox(groupBox);
+        QIcon icon12;
+        icon12.addFile(QString::fromUtf8(":/button_icons/icons/square_blue.png"), QSize(), QIcon::Normal, QIcon::On);
+        resistorColorComboBox->addItem(icon12, QString());
+        QIcon icon13;
+        icon13.addFile(QString::fromUtf8(":/button_icons/icons/square_beige.png"), QSize(), QIcon::Normal, QIcon::On);
+        resistorColorComboBox->addItem(icon13, QString());
+        QIcon icon14;
+        icon14.addFile(QString::fromUtf8(":/button_icons/icons/square_grey.png"), QSize(), QIcon::Normal, QIcon::On);
+        resistorColorComboBox->addItem(icon14, QString());
+        resistorColorComboBox->setObjectName(QString::fromUtf8("resistorColorComboBox"));
+        resistorColorComboBox->setMinimumSize(QSize(0, 30));
+        resistorColorComboBox->setMaximumSize(QSize(16777215, 30));
+        resistorColorComboBox->setFont(font1);
+        resistorColorComboBox->setStyleSheet(QString::fromUtf8("  QComboBox {\n"
+"	 background-color:none;\n"
+"	 border-color :rgb(108, 176, 168);\n"
+"	color: rgb(0, 0 0);\n"
+"      border-style:solid;\n"
+"      border-width:1px;\n"
+"  }\n"
+"\n"
+"  QComboBox:hover { \n"
+"	background-color: rgb(108, 176, 168);\n"
+"	color: rgb(255, 255, 255);\n"
+"  }"));
+        resistorColorComboBox->setInsertPolicy(QComboBox::NoInsert);
+        resistorColorComboBox->setIconSize(QSize(24, 24));
+
+        verticalLayout_14->addWidget(resistorColorComboBox);
+
+
+        verticalLayout_15->addLayout(verticalLayout_14);
+
+        verticalSpacer_9 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_15->addItem(verticalSpacer_9);
+
+
+        horizontalLayout_7->addLayout(verticalLayout_15);
+
+        horizontalSpacer_12 = new QSpacerItem(248, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_7->addItem(horizontalSpacer_12);
+
 
         verticalLayout_13->addWidget(groupBox);
 
@@ -702,6 +780,7 @@ public:
         comboBox_2->setCurrentIndex(0);
         comboBox_3->setCurrentIndex(0);
         comboBox_4->setCurrentIndex(0);
+        resistorColorComboBox->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -772,28 +851,35 @@ public:
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Application name:  4 Band Resistor Color Code Calculator</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Date: 03.10.2021</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Date: 04.10.2021</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">-------------------------------</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; marg"
                         "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Author: Cri\310\231u Radu Andrei</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">email: crisuraduandrei@gmail.com</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">email: </span><span style=\" font-size:14pt; text-decoration: underline; color:#550000;\">crisuraduandrei@gmail.com</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Using: Qt Framework</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">About Qt: </span><a href=\"https://www.qt.io/\"><span style=\""
+                        " font-size:14pt; text-decoration: underline; color:#007af4;\">https://www.qt.io/</span></a></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-inde"
-                        "nt:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License: GNU Lesser General Public License v2.1</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License: GNU Lesser General Public License v2.1</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License text and source code at : </span><a href=\"https://github.com/andrei-crisu/ResistorColorCodeCalculator\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">https://github.com/andrei-crisu/ResistorColorCodeCalculator</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -q"
+                        "t-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; text-decoration: underline;\">Other resources:</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; ma"
-                        "rgin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">	- icons and images: </span><a href=\"&lt;div&gt;Icons made by &lt;a href=\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flaticon.com</span></a><span style=\" font-size:14pt;\">&quot;&gt;</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Icons made by </span><a href=\"https://www.flaticon.com/authors/vitaly-gorbachev\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flatico"
-                        "n.com</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">	- icons and images: </span><a href=\"&lt;div&gt;Icons made by &lt;a href=\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flaticon.com</span></a><span style=\" font-size:14pt;\">&quot;&gt;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent"
+                        ":0px;\"><span style=\" font-size:14pt;\">Icons made by </span><a href=\"https://www.flaticon.com/authors/vitaly-gorbachev\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flaticon.com</span></a></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">	-information about resistor color code: </span><a href=\"https://www.digikey.ro/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">https://www.digikey.ro/</span></a></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p></body></html>", nullptr));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; marg"
+                        "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p></body></html>", nullptr));
         home_2->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
         groupBox->setTitle(QString());
+        label_7->setText(QCoreApplication::translate("MainWindow", "Resistor Color", nullptr));
+        resistorColorComboBox->setItemText(0, QCoreApplication::translate("MainWindow", "Blue", nullptr));
+        resistorColorComboBox->setItemText(1, QCoreApplication::translate("MainWindow", "Beige ", nullptr));
+        resistorColorComboBox->setItemText(2, QCoreApplication::translate("MainWindow", "Grey", nullptr));
+
         home_3->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
     } // retranslateUi
 

@@ -44,6 +44,8 @@ private slots:
 
     void on_home_3_clicked();
 
+    void on_resistorColorComboBox_currentIndexChanged(int index);
+
 public slots:
     void onTimer();
 

@@ -44,4 +44,7 @@ DISTFILES += \
     icons/square_6.png \
     icons/square_7.png \
     icons/square_8.png \
-    icons/square_9.png
+    icons/square_9.png \
+    icons/square_beige.png \
+    icons/square_blue.png \
+    icons/square_grey.png

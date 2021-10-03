@@ -77,7 +77,10 @@ DIST          = icons/home.png \
 		icons/square_6.png \
 		icons/square_7.png \
 		icons/square_8.png \
-		icons/square_9.png ..\ResistorColorCodeCalculator_GUI\customgraphicsitem.h \
+		icons/square_9.png \
+		icons/square_beige.png \
+		icons/square_blue.png \
+		icons/square_grey.png ..\ResistorColorCodeCalculator_GUI\customgraphicsitem.h \
 		..\ResistorColorCodeCalculator_GUI\customscene.h \
 		..\ResistorColorCodeCalculator_GUI\mainwindow.h ..\ResistorColorCodeCalculator_GUI\customgraphicsitem.cpp \
 		..\ResistorColorCodeCalculator_GUI\customscene.cpp \
@@ -130,14 +133,17 @@ debug/qrc_icons.cpp: ../ResistorColorCodeCalculator_GUI/icons.qrc \
 		../ResistorColorCodeCalculator_GUI/icons/square_5.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_2.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_11.png \
+		../ResistorColorCodeCalculator_GUI/icons/square_beige.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_3.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_1.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_4.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_7.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_8.png \
+		../ResistorColorCodeCalculator_GUI/icons/square_grey.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_9.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_6.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_0.png \
+		../ResistorColorCodeCalculator_GUI/icons/square_blue.png \
 		../ResistorColorCodeCalculator_GUI/icons/home.png \
 		../ResistorColorCodeCalculator_GUI/icons/square_10.png
 	C:\Qt\6.0.4\mingw81_64\bin\rcc.exe -name icons ..\ResistorColorCodeCalculator_GUI\icons.qrc -o debug\qrc_icons.cpp
@@ -388,6 +394,16 @@ debug/moc_mainwindow.cpp: ../ResistorColorCodeCalculator_GUI/mainwindow.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/QTransform \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qicon.h \
+		../ResistorColorCodeCalculator_GUI/customscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsScene \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpen.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
+		../ResistorColorCodeCalculator_GUI/customgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsObject \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpainterpath.h \
 		debug/moc_predefs.h \
 		C:/Qt/6.0.4/mingw81_64/bin/moc.exe
 	C:\Qt\6.0.4\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Users/crisu/Desktop/CCppCode/ResistorColorCodeCalculator/build-ResistorColorCodeCalculator_GUI-Desktop_Qt_6_0_4_MinGW_64_bit-Debug/debug/moc_predefs.h -IC:/Qt/6.0.4/mingw81_64/mkspecs/win32-g++ -IC:/Users/crisu/Desktop/CCppCode/ResistorColorCodeCalculator/ResistorColorCodeCalculator_GUI -IC:/Qt/6.0.4/mingw81_64/include -IC:/Qt/6.0.4/mingw81_64/include/QtWidgets -IC:/Qt/6.0.4/mingw81_64/include/QtGui -IC:/Qt/6.0.4/mingw81_64/include/QtCore -I. -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\ResistorColorCodeCalculator_GUI\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -529,7 +545,8 @@ debug/customgraphicsitem.o: ../ResistorColorCodeCalculator_GUI/customgraphicsite
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qtextoption.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qfontinfo.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qfont.h \
-		C:/Qt/6.0.4/mingw81_64/include/QtGui/qfontmetrics.h
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qfontmetrics.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtCore/QString
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\customgraphicsitem.o ..\ResistorColorCodeCalculator_GUI\customgraphicsitem.cpp
 
 debug/customscene.o: ../ResistorColorCodeCalculator_GUI/customscene.cpp ../ResistorColorCodeCalculator_GUI/customscene.h \
@@ -767,6 +784,16 @@ debug/main.o: ../ResistorColorCodeCalculator_GUI/main.cpp ../ResistorColorCodeCa
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/QTransform \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qicon.h \
+		../ResistorColorCodeCalculator_GUI/customscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsScene \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpen.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
+		../ResistorColorCodeCalculator_GUI/customgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsObject \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpainterpath.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QApplication \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -907,6 +934,16 @@ debug/mainwindow.o: ../ResistorColorCodeCalculator_GUI/mainwindow.cpp ../Resisto
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/QTransform \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qtabwidget.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qicon.h \
+		../ResistorColorCodeCalculator_GUI/customscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsScene \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpen.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsSceneMouseEvent \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicssceneevent.h \
+		../ResistorColorCodeCalculator_GUI/customgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGraphicsObject \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsitem.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpainterpath.h \
 		ui_mainwindow.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtCore/QVariant \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QApplication \
@@ -934,10 +971,10 @@ debug/mainwindow.o: ../ResistorColorCodeCalculator_GUI/mainwindow.cpp ../Resisto
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsview.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpainter.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtGui/qtextoption.h \
-		C:/Qt/6.0.4/mingw81_64/include/QtGui/qpen.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qscrollarea.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgraphicsscene.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QGroupBox \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qgroupbox.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QHBoxLayout \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qboxlayout.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qlayout.h \
@@ -956,8 +993,14 @@ debug/mainwindow.o: ../ResistorColorCodeCalculator_GUI/mainwindow.cpp ../Resisto
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QSpacerItem \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QStackedWidget \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qstackedwidget.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QTextEdit \
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/qtextedit.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtGui/qtextdocument.h \
 		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QVBoxLayout \
-		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QWidget
+		C:/Qt/6.0.4/mingw81_64/include/QtWidgets/QWidget \
+		C:/Qt/6.0.4/mingw81_64/include/QtCore/QTimer \
+		C:/Qt/6.0.4/mingw81_64/include/QtCore/qtimer.h \
+		C:/Qt/6.0.4/mingw81_64/include/QtCore/qbasictimer.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\ResistorColorCodeCalculator_GUI\mainwindow.cpp
 
 debug/qrc_icons.o: debug/qrc_icons.cpp 

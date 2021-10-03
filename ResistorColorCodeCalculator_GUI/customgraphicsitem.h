@@ -19,6 +19,7 @@ public:
     double height;
     double cornerSize;
     double xPos,yPos;
+    int resistorColorType;
 
     void setFirstBand(int val);
     void setSecondBand(int val);
