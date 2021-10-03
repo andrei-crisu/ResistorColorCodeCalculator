@@ -45,8 +45,8 @@
     <item>
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(190, 192, 193);
-background-color: rgb(255, 255, 255);</string>
+       <string notr="true">background-color: rgb(232, 232, 232);
+</string>
       </property>
       <property name="currentIndex">
        <number>1</number>
@@ -266,11 +266,14 @@ background-color: rgb(255, 255, 255);</string>
               </property>
               <property name="font">
                <font>
-                <pointsize>24</pointsize>
+                <pointsize>20</pointsize>
                </font>
               </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
               <property name="text">
-               <string> 4 Band Resistor</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-style:italic; text-decoration: underline;&quot;&gt;4 Band Resistor&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
              </widget>
             </item>
@@ -303,6 +306,9 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
                   <property name="text">
                    <string>1st Band of Color</string>
                   </property>
@@ -312,7 +318,7 @@ background-color: rgb(255, 255, 255);</string>
                  <widget class="QComboBox" name="comboBox">
                   <property name="minimumSize">
                    <size>
-                    <width>240</width>
+                    <width>0</width>
                     <height>30</height>
                    </size>
                   </property>
@@ -327,8 +333,22 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">  QComboBox {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	color: rgb(0, 0 0);
+      border-style:solid;
+      border-width:1px;
+  }
+
+  QComboBox:hover { 
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+                  </property>
                   <property name="currentIndex">
-                   <number>-1</number>
+                   <number>0</number>
                   </property>
                   <property name="insertPolicy">
                    <enum>QComboBox::NoInsert</enum>
@@ -436,26 +456,6 @@ background-color: rgb(255, 255, 255);</string>
                    <property name="icon">
                     <iconset>
                      <normalon>:/button_icons/icons/square_9.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Gold [ 10 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_10.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Silver [ 11 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_11.png</normalon>
                     </iconset>
                    </property>
                   </item>
@@ -487,6 +487,9 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
                   <property name="text">
                    <string>2nd Band of Color</string>
                   </property>
@@ -511,8 +514,22 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">  QComboBox {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	color: rgb(0, 0 0);
+      border-style:solid;
+      border-width:1px;
+  }
+
+  QComboBox:hover { 
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+                  </property>
                   <property name="currentIndex">
-                   <number>-1</number>
+                   <number>0</number>
                   </property>
                   <property name="insertPolicy">
                    <enum>QComboBox::NoInsert</enum>
@@ -620,26 +637,6 @@ background-color: rgb(255, 255, 255);</string>
                    <property name="icon">
                     <iconset>
                      <normalon>:/button_icons/icons/square_9.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Gold [ 10 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_10.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Silver [ 11 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_11.png</normalon>
                     </iconset>
                    </property>
                   </item>
@@ -671,6 +668,9 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
                   <property name="text">
                    <string>Multiplier</string>
                   </property>
@@ -695,8 +695,22 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">  QComboBox {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	color: rgb(0, 0 0);
+      border-style:solid;
+      border-width:1px;
+  }
+
+  QComboBox:hover { 
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+                  </property>
                   <property name="currentIndex">
-                   <number>-1</number>
+                   <number>0</number>
                   </property>
                   <property name="insertPolicy">
                    <enum>QComboBox::NoInsert</enum>
@@ -709,7 +723,7 @@ background-color: rgb(255, 255, 255);</string>
                   </property>
                   <item>
                    <property name="text">
-                    <string>Black [ 0 ]</string>
+                    <string>Black [ x1 Ohm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -719,7 +733,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Brown [ 1 ]</string>
+                    <string>Brown [ x10 Ohm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -729,7 +743,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Red [ 2 ]</string>
+                    <string>Red [ x100 Ohm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -739,7 +753,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Orange [ 3 ]</string>
+                    <string>Orange [ x1 KOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -749,7 +763,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Yellow [ 4 ]</string>
+                    <string>Yellow [ x10 KOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -759,7 +773,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Green [ 5 ]</string>
+                    <string>Green [ x100 KOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -769,7 +783,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Blue [ 6 ]</string>
+                    <string>Blue [ x1 MOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -779,7 +793,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Violet [ 7 ]</string>
+                    <string>Violet [ x10 MOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -789,7 +803,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Grey [ 8 ]</string>
+                    <string>Grey [ x100 MOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -799,7 +813,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>White [ 9 ]</string>
+                    <string>White [ x1 GOhm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -809,7 +823,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Gold [ 10 ]</string>
+                    <string>Gold [ x0.1 Ohm]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -819,7 +833,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Silver [ 11 ]</string>
+                    <string>Silver [ x0.01 Ohm ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -855,6 +869,9 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true"/>
+                  </property>
                   <property name="text">
                    <string>Tolerance</string>
                   </property>
@@ -879,8 +896,22 @@ background-color: rgb(255, 255, 255);</string>
                     <pointsize>14</pointsize>
                    </font>
                   </property>
+                  <property name="styleSheet">
+                   <string notr="true">  QComboBox {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	color: rgb(0, 0 0);
+      border-style:solid;
+      border-width:1px;
+  }
+
+  QComboBox:hover { 
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+                  </property>
                   <property name="currentIndex">
-                   <number>-1</number>
+                   <number>0</number>
                   </property>
                   <property name="insertPolicy">
                    <enum>QComboBox::NoInsert</enum>
@@ -893,17 +924,7 @@ background-color: rgb(255, 255, 255);</string>
                   </property>
                   <item>
                    <property name="text">
-                    <string>Black [ 0 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_0.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Brown [ 1 ]</string>
+                    <string>Brown [ 1% ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -913,7 +934,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Red [ 2 ]</string>
+                    <string>Red [ 2 % ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -923,27 +944,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Orange [ 3 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_3.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Yellow [ 4 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_4.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Green [ 5 ]</string>
+                    <string>Green [ 0.5%  ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -953,7 +954,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Blue [ 6 ]</string>
+                    <string>Blue [ 0.25%  ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -963,7 +964,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Violet [ 7 ]</string>
+                    <string>Violet [ 0.1% ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -973,7 +974,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Grey [ 8 ]</string>
+                    <string>Grey [ 0.05% ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -983,17 +984,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>White [ 9 ]</string>
-                   </property>
-                   <property name="icon">
-                    <iconset>
-                     <normalon>:/button_icons/icons/square_9.png</normalon>
-                    </iconset>
-                   </property>
-                  </item>
-                  <item>
-                   <property name="text">
-                    <string>Gold [ 10 ]</string>
+                    <string>Gold [ 5% ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -1003,7 +994,7 @@ background-color: rgb(255, 255, 255);</string>
                   </item>
                   <item>
                    <property name="text">
-                    <string>Silver [ 11 ]</string>
+                    <string>Silver [ 10% ]</string>
                    </property>
                    <property name="icon">
                     <iconset>
@@ -1046,23 +1037,42 @@ background-color: rgb(255, 255, 255);</string>
                <number>0</number>
               </property>
               <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
                <widget class="QLabel" name="label">
                 <property name="minimumSize">
                  <size>
-                  <width>220</width>
-                  <height>40</height>
+                  <width>180</width>
+                  <height>36</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>220</width>
-                  <height>40</height>
+                  <width>180</width>
+                  <height>36</height>
                  </size>
                 </property>
                 <property name="font">
                  <font>
-                  <pointsize>24</pointsize>
+                  <pointsize>20</pointsize>
                  </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true"/>
                 </property>
                 <property name="text">
                  <string>Resistor Value:</string>
@@ -1085,8 +1095,18 @@ background-color: rgb(255, 255, 255);</string>
                 </property>
                 <property name="font">
                  <font>
-                  <pointsize>24</pointsize>
+                  <pointsize>20</pointsize>
                  </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">  QLineEdit {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	 color: rgb(108, 176, 168);
+      border-style:solid;
+      border-width:1px;
+  }
+</string>
                 </property>
                 <property name="text">
                  <string>-</string>
@@ -1098,6 +1118,19 @@ background-color: rgb(255, 255, 255);</string>
                  <bool>true</bool>
                 </property>
                </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_5">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </item>
@@ -1121,7 +1154,7 @@ background-color: rgb(255, 255, 255);</string>
            </spacer>
           </item>
           <item>
-           <widget class="QPushButton" name="clear">
+           <widget class="QPushButton" name="home">
             <property name="minimumSize">
              <size>
               <width>100</width>
@@ -1139,13 +1172,27 @@ background-color: rgb(255, 255, 255);</string>
               <pointsize>14</pointsize>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">  QPushButton {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	 color: rgb(108, 176, 168);
+      border-style:solid;
+      border-width:1px;
+  }
+  QPushButton:hover:!pressed { 
+	
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+            </property>
             <property name="text">
-             <string>Clear</string>
+             <string>Home</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="calculate">
+           <widget class="QPushButton" name="about_2">
             <property name="minimumSize">
              <size>
               <width>100</width>
@@ -1163,8 +1210,22 @@ background-color: rgb(255, 255, 255);</string>
               <pointsize>14</pointsize>
              </font>
             </property>
+            <property name="styleSheet">
+             <string notr="true">  QPushButton {
+	 background-color:none;
+	 border-color :rgb(108, 176, 168);
+	 color: rgb(108, 176, 168);
+      border-style:solid;
+      border-width:1px;
+  }
+  QPushButton:hover:!pressed { 
+	
+	background-color: rgb(108, 176, 168);
+	color: rgb(255, 255, 255);
+  }</string>
+            </property>
             <property name="text">
-             <string>Calculate</string>
+             <string>About</string>
             </property>
            </widget>
           </item>
@@ -1178,7 +1239,7 @@ background-color: rgb(255, 255, 255);</string>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
-              <width>100</width>
+              <width>60</width>
               <height>20</height>
              </size>
             </property>
@@ -1195,6 +1256,22 @@ background-color: rgb(255, 255, 255);</string>
            <size>
             <width>20</width>
             <height>196</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>100</height>
            </size>
           </property>
          </spacer>

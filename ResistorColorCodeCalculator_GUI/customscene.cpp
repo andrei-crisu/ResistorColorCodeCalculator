@@ -2,5 +2,5 @@
 
 CustomScene::CustomScene(QObject *parent) : QGraphicsScene(parent)
 {
-    setBackgroundBrush(QBrush(QColor(242,242,242)));
+    setBackgroundBrush(QBrush(QColor(236,236,236)));
 }
