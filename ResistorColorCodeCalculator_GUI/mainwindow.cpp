@@ -41,13 +41,13 @@ void MainWindow::on_calculator_clicked()
 
 void MainWindow::on_settings_clicked()
 {
-
+    ui->stackedWidget->setCurrentIndex(3);
 }
 
 
 void MainWindow::on_about_clicked()
 {
-
+    ui->stackedWidget->setCurrentIndex(2);
 }
 
 void MainWindow::onTimer()
@@ -97,6 +97,18 @@ void MainWindow::on_home_clicked()
 
 void MainWindow::on_about_2_clicked()
 {
+    ui->stackedWidget->setCurrentIndex(2);
+}
 
+
+void MainWindow::on_home_2_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
+}
+
+
+void MainWindow::on_home_3_clicked()
+{
+    ui->stackedWidget->setCurrentIndex(0);
 }
 

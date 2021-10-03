@@ -40,6 +40,10 @@ private slots:
 
     void on_about_2_clicked();
 
+    void on_home_2_clicked();
+
+    void on_home_3_clicked();
+
 public slots:
     void onTimer();
 

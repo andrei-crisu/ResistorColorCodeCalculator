@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QGraphicsView>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
@@ -20,6 +21,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStackedWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -74,6 +76,25 @@ public:
     QSpacerItem *horizontalSpacer_4;
     QSpacerItem *verticalSpacer_3;
     QSpacerItem *verticalSpacer_4;
+    QWidget *page_3;
+    QVBoxLayout *verticalLayout_12;
+    QSpacerItem *verticalSpacer_6;
+    QLabel *label_8;
+    QTextEdit *textEdit;
+    QHBoxLayout *horizontalLayout_5;
+    QSpacerItem *horizontalSpacer_7;
+    QPushButton *home_2;
+    QSpacerItem *horizontalSpacer_8;
+    QSpacerItem *verticalSpacer_5;
+    QWidget *page_4;
+    QVBoxLayout *verticalLayout_13;
+    QGroupBox *groupBox;
+    QSpacerItem *verticalSpacer_7;
+    QHBoxLayout *horizontalLayout_6;
+    QSpacerItem *horizontalSpacer_9;
+    QPushButton *home_3;
+    QSpacerItem *horizontalSpacer_10;
+    QSpacerItem *verticalSpacer_8;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -464,13 +485,10 @@ public:
 
         lineEdit = new QLineEdit(page_2);
         lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setMinimumSize(QSize(240, 0));
-        lineEdit->setMaximumSize(QSize(240, 16777215));
+        lineEdit->setMinimumSize(QSize(320, 0));
+        lineEdit->setMaximumSize(QSize(320, 16777215));
         lineEdit->setFont(font);
         lineEdit->setStyleSheet(QString::fromUtf8("  QLineEdit {\n"
-"	 background-color:none;\n"
-"	 border-color :rgb(108, 176, 168);\n"
-"	 color: rgb(108, 176, 168);\n"
 "      border-style:solid;\n"
 "      border-width:1px;\n"
 "  }\n"
@@ -555,6 +573,123 @@ public:
         verticalLayout_11->addItem(verticalSpacer_4);
 
         stackedWidget->addWidget(page_2);
+        page_3 = new QWidget();
+        page_3->setObjectName(QString::fromUtf8("page_3"));
+        verticalLayout_12 = new QVBoxLayout(page_3);
+        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
+        verticalSpacer_6 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_12->addItem(verticalSpacer_6);
+
+        label_8 = new QLabel(page_3);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setMinimumSize(QSize(240, 40));
+        label_8->setMaximumSize(QSize(16777215, 40));
+        label_8->setFont(font);
+        label_8->setStyleSheet(QString::fromUtf8(""));
+        label_8->setAlignment(Qt::AlignCenter);
+
+        verticalLayout_12->addWidget(label_8);
+
+        textEdit = new QTextEdit(page_3);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+
+        verticalLayout_12->addWidget(textEdit);
+
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_7);
+
+        home_2 = new QPushButton(page_3);
+        home_2->setObjectName(QString::fromUtf8("home_2"));
+        home_2->setMinimumSize(QSize(100, 30));
+        home_2->setMaximumSize(QSize(100, 30));
+        home_2->setFont(font1);
+        home_2->setStyleSheet(QString::fromUtf8("  QPushButton {\n"
+"	 background-color:none;\n"
+"	 border-color :rgb(108, 176, 168);\n"
+"	 color: rgb(108, 176, 168);\n"
+"      border-style:solid;\n"
+"      border-width:1px;\n"
+"  }\n"
+"  QPushButton:hover:!pressed { \n"
+"	\n"
+"	background-color: rgb(108, 176, 168);\n"
+"	color: rgb(255, 255, 255);\n"
+"  }"));
+
+        horizontalLayout_5->addWidget(home_2);
+
+        horizontalSpacer_8 = new QSpacerItem(60, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_8);
+
+
+        verticalLayout_12->addLayout(horizontalLayout_5);
+
+        verticalSpacer_5 = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_12->addItem(verticalSpacer_5);
+
+        stackedWidget->addWidget(page_3);
+        page_4 = new QWidget();
+        page_4->setObjectName(QString::fromUtf8("page_4"));
+        verticalLayout_13 = new QVBoxLayout(page_4);
+        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
+        groupBox = new QGroupBox(page_4);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(1);
+        sizePolicy1.setVerticalStretch(1);
+        sizePolicy1.setHeightForWidth(groupBox->sizePolicy().hasHeightForWidth());
+        groupBox->setSizePolicy(sizePolicy1);
+
+        verticalLayout_13->addWidget(groupBox);
+
+        verticalSpacer_7 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_13->addItem(verticalSpacer_7);
+
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        horizontalSpacer_9 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_9);
+
+        home_3 = new QPushButton(page_4);
+        home_3->setObjectName(QString::fromUtf8("home_3"));
+        home_3->setMinimumSize(QSize(100, 30));
+        home_3->setMaximumSize(QSize(100, 30));
+        home_3->setFont(font1);
+        home_3->setStyleSheet(QString::fromUtf8("  QPushButton {\n"
+"	 background-color:none;\n"
+"	 border-color :rgb(108, 176, 168);\n"
+"	 color: rgb(108, 176, 168);\n"
+"      border-style:solid;\n"
+"      border-width:1px;\n"
+"  }\n"
+"  QPushButton:hover:!pressed { \n"
+"	\n"
+"	background-color: rgb(108, 176, 168);\n"
+"	color: rgb(255, 255, 255);\n"
+"  }"));
+
+        horizontalLayout_6->addWidget(home_3);
+
+        horizontalSpacer_10 = new QSpacerItem(60, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_10);
+
+
+        verticalLayout_13->addLayout(horizontalLayout_6);
+
+        verticalSpacer_8 = new QSpacerItem(20, 100, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_13->addItem(verticalSpacer_8);
+
+        stackedWidget->addWidget(page_4);
 
         verticalLayout->addWidget(stackedWidget);
 
@@ -562,7 +697,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(0);
         comboBox->setCurrentIndex(0);
         comboBox_2->setCurrentIndex(0);
         comboBox_3->setCurrentIndex(0);
@@ -631,6 +766,35 @@ public:
         lineEdit->setText(QCoreApplication::translate("MainWindow", "-", nullptr));
         home->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
         about_2->setText(QCoreApplication::translate("MainWindow", "About", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-style:italic;\">About</span></p></body></html>", nullptr));
+        textEdit->setHtml(QCoreApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Application name:  4 Band Resistor Color Code Calculator</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Date: 03.10.2021</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">-------------------------------</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; marg"
+                        "in-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Author: Cri\310\231u Radu Andrei</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">email: crisuraduandrei@gmail.com</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Using: Qt Framework</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-inde"
+                        "nt:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License: GNU Lesser General Public License v2.1</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">License text and source code at : </span><a href=\"https://github.com/andrei-crisu/ResistorColorCodeCalculator\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">https://github.com/andrei-crisu/ResistorColorCodeCalculator</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; text-decoration: underline;\">Other resources:</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; ma"
+                        "rgin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">	- icons and images: </span><a href=\"&lt;div&gt;Icons made by &lt;a href=\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flaticon.com</span></a><span style=\" font-size:14pt;\">&quot;&gt;</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">Icons made by </span><a href=\"https://www.flaticon.com/authors/vitaly-gorbachev\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">Vitaly Gorbachev</span></a><span style=\" font-size:14pt;\"> from </span><a href=\"https://www.flaticon.com/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">www.flatico"
+                        "n.com</span></a></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt;\"><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">	-information about resistor color code: </span><a href=\"https://www.digikey.ro/\"><span style=\" font-size:14pt; text-decoration: underline; color:#007af4;\">https://www.digikey.ro/</span></a></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt;\">--------------------------------</span></p></body></html>", nullptr));
+        home_2->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
+        groupBox->setTitle(QString());
+        home_3->setText(QCoreApplication::translate("MainWindow", "Home", nullptr));
     } // retranslateUi
 
 };
