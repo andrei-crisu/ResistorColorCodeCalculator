@@ -22,6 +22,7 @@ HEADERS += \
 FORMS += \
     mainwindow.ui
 
+RC_FILE = resistor_app.rc
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
